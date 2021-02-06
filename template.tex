@@ -1,0 +1,35 @@
+\documentclass[fontsize=12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{fancyvrb, amsmath, amsthm, amssymb, setspace, amssymb, graphicx, enumitem, amsfonts, amssymb, ifthen, geometry}
+
+\newcommand {\DS} [1] {${\displaystyle #1}$}
+\newcommand{\R}{\mathbb{R}} \newcommand{\C}{\mathbb{C}} \newcommand{\Z}{\mathbb{Z}} \newcommand{\N}{\mathbb{N}} \renewcommand{\qedsymbol}{$\blacksquare$}
+
+% auto brackets
+\usepackage{mathtools}
+\DeclarePairedDelimiter\autobracket{(}{)} \newcommand{\br}[1]{\autobracket*{#1}}
+\DeclarePairedDelimiter\autosquarebracket{[}{]} \newcommand{\sbr}[1]{\autosquarebracket*{#1}}
+
+\usepackage{inconsolata}
+\usepackage{xcolor}
+\usepackage{minted}
+
+\renewcommand\theFancyVerbLine{\small\arabic{FancyVerbLine}}
+
+\definecolor{bg}{HTML}{EEEEEE}
+\definecolor{white}{HTML}{FFFFFF}
+\newcommand{\py}[1]{\mintinline[bgcolor=white, baselinestretch=1]{python}{#1}}
+\setminted{style=friendly, bgcolor=bg, linenos, mathescape}
+
+\title{}
+\author{}
+\date{\today}
+
+\setstretch{1.5}
+\begin{document}
+\DS{f: \R \to \N}
+\begin{minted}{javascript}
+    const constant = "banana"
+\end{minted}
+\end{document}
